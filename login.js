@@ -17,7 +17,7 @@ function login() {
             if (user.length > 0) {
                 if (user[0].password === password) {
                     // redirect ke halaman profile
-                    window.location.replace('./profile.html');
+                    window.location.replace('./todo.html');
                 } else {
                     alert(`Email atau password Anda salah`);
                 }
