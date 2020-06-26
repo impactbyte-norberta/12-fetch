@@ -16,6 +16,9 @@ function login() {
 
             if (user.length > 0) {
                 if (user[0].password === password) {
+                    // Simpan data user yang login ke local storage
+                    localStorage.setItem('user', JSON.stringify(user[0]));
+
                     // redirect ke halaman profile
                     window.location.replace('./todo.html');
                 } else {
