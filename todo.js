@@ -81,3 +81,8 @@ function deleteTodo(id) {
         })
         .catch((error) => console.error(error));
 }
+
+function logout() {
+    localStorage.removeItem('user');
+    window.location.replace('./index.html');
+}
